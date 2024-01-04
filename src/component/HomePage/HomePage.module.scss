@@ -1,0 +1,5 @@
+@import "../../index.scss";
+
+.mainDiv {
+  @include typography(400);
+}

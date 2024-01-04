@@ -1,13 +1,14 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+$brand-primary: #391e5a !default;
+$my-color: #333333 !default;
+$my-Font: sans-serif;
+$my-Size: 14px;
+$my-Style: normal;
+$my-line-height: normal;
+@mixin typography($font-weight) {
+  color: $my-color;
+  font-family: $my-Font;
+  font-size: $my-Size;
+  font-style: $my-Style;
+  font-weight: $font-weight;
+  line-height: $my-line-height;
 }
