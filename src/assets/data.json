@@ -1,0 +1,32 @@
+{
+  "DataArray": [
+    {
+      "Id": "Data1",
+      "Title": "Sample Title",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae tincidunt est, dictum convallis purus. Fusce eu est a lacus luctus sodales id vitae diam. Ut interdum tristique ....",
+      "Subject": "Sample subject",
+      "Schedule": "Daily at 10:00AM"
+    },
+    {
+      "Id": "Data2",
+      "Title": "Sample Title",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae tincidunt est, dictum convallis purus. Fusce eu est a lacus luctus sodales id vitae diam. Ut interdum tristique ....",
+      "Subject": "Sample subject",
+      "Schedule": "Daily at 10:00AM"
+    },
+    {
+      "Id": "Data3",
+      "Title": "Sample Title",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae tincidunt est, dictum convallis purus. Fusce eu est a lacus luctus sodales id vitae diam. Ut interdum tristique ....",
+      "Subject": "Sample subject",
+      "Schedule": "Daily at 10:00AM"
+    },
+    {
+      "Id": "Data4",
+      "Title": "Sample Title",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae tincidunt est, dictum convallis purus. Fusce eu est a lacus luctus sodales id vitae diam. Ut interdum tristique ....",
+      "Subject": "Sample subject",
+      "Schedule": "Daily at 10:00AM"
+    }
+  ]
+}
