@@ -1,9 +1,18 @@
 $brand-primary: #391e5a !default;
+$background: #f3f3f9;
+$tab: #d8d2de;
 $my-color: #333333 !default;
+$button-text-color: #e4e4ee;
 $my-Font: sans-serif;
 $my-Size: 14px;
 $my-Style: normal;
 $my-line-height: normal;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 @mixin typography($font-weight) {
   color: $my-color;
   font-family: $my-Font;

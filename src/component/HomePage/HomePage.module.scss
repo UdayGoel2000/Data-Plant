@@ -1,5 +1,19 @@
 @import "../../index.scss";
 
 .mainDiv {
-  @include typography(400);
+  // @include typography(400);
+  margin-top: 5vh;
+  background-color: $background;
+  display: flex;
+}
+.sideBar {
+  margin: 0;
+  width: 5vw;
+  height: 95vh;
+  background-color: $brand-primary;
+}
+.Tab {
+  background-color: $tab;
+  height: 4.5vh;
+  width: 95vw;
 }

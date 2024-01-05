@@ -1,0 +1,61 @@
+@import "../../index.scss";
+
+.mainDiv {
+  margin: 1.5vh 1.5vw;
+  margin-right: 4vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .searchDiv {
+    height: 5vh;
+    width: 20vw;
+    position: relative;
+    .searchFilter {
+      width: 100%;
+      height: 100%;
+      padding-left: 1vw;
+      border-radius: 4px;
+      border: 1px solid $button-text-color;
+      &:focus {
+        outline: 1px solid $brand-primary;
+      }
+    }
+    .searchSVG {
+      //   margin-left  : -13%;
+      height: 100%;
+      position: absolute;
+      top: 25%;
+      left: 90%;
+      transform: translate(0%, 0%);
+      text-align: center;
+    }
+  }
+  .AddButton {
+    display: flex;
+    justify-content: center;
+    background-color: $brand-primary;
+    color: $button-text-color;
+    width: 4.3vw;
+    height: 5vh;
+    border-radius: 4px;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    .addButtonDiv {
+      width: 1vw;
+      height: 2.3vh;
+      border: 2px solid $button-text-color;
+      border-radius: 50%;
+      position: relative;
+
+      span {
+        font-weight: bolder;
+        position: absolute;
+        top: -24%;
+        left: 10%;
+      }
+    }
+  }
+}
