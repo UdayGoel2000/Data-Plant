@@ -1,5 +1,6 @@
-import React, { useReducer, createContext, useContext } from "react";
+import React, { useReducer, createContext, useContext, useEffect } from "react";
 import { Prop, MyState, MyContext } from "../utils/Types";
+import DataArray from "../assets/data.json";
 
 const DataContext = createContext<MyContext | undefined>(undefined);
 export const useMyContext = () => {
@@ -14,7 +15,10 @@ const DataProvider = ({ children }: Prop) => {
     ...state,
     ...newState,
   });
-  const [state, setState] = useReducer(reducer, { seacrhText: "" });
+  const [state, setState] = useReducer(reducer, {
+    seacrhText: "",
+    mainData: [],
+  });
   const handleState = (obj: Partial<MyState>) => {
     setState(obj);
   };
@@ -22,6 +26,9 @@ const DataProvider = ({ children }: Prop) => {
     state,
     handleState,
   };
+  useEffect(() => {
+    handleState({ mainData: DataArray.DataArray });
+  }, []);
 
   return (
     <div>
