@@ -1,0 +1,45 @@
+@import "../../index.scss";
+
+.mainDiv {
+  margin: 1.5vh 1.5vw;
+  margin-right: 4vw;
+  table {
+    border-collapse: collapse;
+    .Header {
+      background: $table-header-background;
+
+      .tableHeaders {
+        @include typography(600, 5vh);
+        th {
+          text-align: left;
+          padding: 1.5vh 1.5vw;
+        }
+        .firstCol {
+          width: 12.9vw;
+        }
+        .secondCol {
+          width: 40vw;
+        }
+        .thirdCol {
+          width: 9.5vw;
+        }
+        .fourthCol {
+          width: 10.3vw;
+        }
+        .fifthCol {
+          width: 16.7vw;
+        }
+      }
+    }
+    .tableRows {
+      @include typography(400, 6vh);
+      border: 1px solid $table-row-border;
+      td {
+        padding: 1.5vh 1.5vw;
+      }
+      .deleteIcon {
+        margin-left: 2vw;
+      }
+    }
+  }
+}

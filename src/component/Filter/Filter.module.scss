@@ -43,19 +43,5 @@
     justify-content: space-between;
     align-items: center;
     gap: 8px;
-    .addButtonDiv {
-      width: 1vw;
-      height: 2.3vh;
-      border: 2px solid $button-text-color;
-      border-radius: 50%;
-      position: relative;
-
-      span {
-        font-weight: bolder;
-        position: absolute;
-        top: -24%;
-        left: 10%;
-      }
-    }
   }
 }

@@ -1,10 +1,10 @@
 import styles from "./Filter.module.scss";
 import { ReactComponent as Search } from "../../assets/Search.svg";
 import { useMyContext } from "../../context/DataProvider";
+import { ReactComponent as AddIcon } from "../../assets/add-button.svg";
 
 const Filter = () => {
   const { state, handleState } = useMyContext();
-  console.log(state);
   return (
     <div className={styles.mainDiv}>
       <div className={styles.searchDiv}>
@@ -22,9 +22,7 @@ const Filter = () => {
         </span>
       </div>
       <div className={styles.AddButton}>
-        <div className={styles.addButtonDiv}>
-          <span>+</span>
-        </div>
+        <AddIcon />
         <p>Add</p>
       </div>
     </div>
