@@ -34,6 +34,7 @@ const DataProvider = ({ children }: Prop) => {
   const [state, setState] = useReducer(reducer, {
     seacrhText: "",
     mainData: [],
+    apiData: [],
     isModalOpen: false,
     modalType: "None",
     clickedDataId: "",
@@ -54,14 +55,31 @@ const DataProvider = ({ children }: Prop) => {
     handleState,
   };
   useEffect(() => {
-    handleState({ mainData: DataArray.DataArray });
+    handleState({
+      apiData: DataArray.DataArray,
+      mainData: DataArray.DataArray,
+    });
   }, []);
+
+  useEffect(() => {
+    if (state.seacrhText !== "") {
+      handleState({
+        mainData: [
+          ...state.apiData.filter((ele) =>
+            ele.Title.includes(state.seacrhText)
+          ),
+        ],
+      });
+    } else {
+      handleState({ mainData: [...state.apiData] });
+    }
+  }, [state.seacrhText, state.apiData]);
 
   useEffect(() => {
     if (state.modalType === "Edit") {
       console.log();
       const editModalData: modalDetailsType | null = [
-        ...state.mainData.map((ele) =>
+        ...state.apiData.map((ele) =>
           ele.Id === state.clickedDataId
             ? {
                 Title: ele.Title,
@@ -95,8 +113,8 @@ const DataProvider = ({ children }: Prop) => {
       });
     } else if (state.modalType === "Delete") {
       handleState({
-        mainData: [
-          ...state.mainData.filter((ele) => ele.Id !== state.clickedDataId),
+        apiData: [
+          ...state.apiData.filter((ele) => ele.Id !== state.clickedDataId),
         ],
         modalType: "None",
       });

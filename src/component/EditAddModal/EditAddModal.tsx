@@ -13,12 +13,12 @@ const EditAddModal = () => {
       : buttonType === "Done"
       ? handleState({
           isModalOpen: false,
-          mainData: [
-            ...state.mainData,
+          apiData: [
+            ...state.apiData,
             {
               Id: `Data${
-                +state.mainData[state.mainData.length - 1].Id[
-                  state.mainData[state.mainData.length - 1].Id.length - 1
+                +state.apiData[state.apiData.length - 1].Id[
+                  state.apiData[state.apiData.length - 1].Id.length - 1
                 ] + 1
               }`,
               Title: state.modalDeatils.Title,
@@ -38,8 +38,8 @@ const EditAddModal = () => {
         })
       : handleState({
           isModalOpen: false,
-          mainData: [
-            ...state.mainData.map((ele) =>
+          apiData: [
+            ...state.apiData.map((ele) =>
               ele.Id === state.clickedDataId
                 ? {
                     Id: state.clickedDataId,
