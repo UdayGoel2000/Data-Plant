@@ -4,7 +4,7 @@ This coding challenge is provided by Data Plant, [click here to view the figma](
 
 ## Deployment
 
-View deployed app here [uday-goel-admin-ui](https://data-plant-dashboard.netlify.app)
+View deployed app here [uday-goel-data-plant-dashboard](https://data-plant-dashboard.netlify.app)
 
 ## Run Locally
 
