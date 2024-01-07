@@ -6,9 +6,26 @@ export type TableDataType = {
   Subject: string;
   Schedule: string;
 };
+// export type FrequencyType = "Monthly" | "Daily" | "Weekly";
+export type modalDetailsType = {
+  Title: string;
+  Description: string;
+  Subject: string;
+  // Frequency: FrequencyType;
+  Frequency: string;
+  Repeat: string;
+  Time: string;
+};
+
+export type ModalType = "Edit" | "Add" | "Delete" | "None";
+
 export type MyState = {
   seacrhText: string;
   mainData: TableDataType[];
+  isModalOpen: boolean;
+  modalType: ModalType;
+  clickedDataId: string;
+  modalDeatils: modalDetailsType;
 };
 export type MyContext = {
   state: MyState;

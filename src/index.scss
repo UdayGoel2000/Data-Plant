@@ -5,6 +5,9 @@ $my-color: #333333 !default;
 $button-text-color: #e4e4ee;
 $table-header-background: var(--Blue10, rgba(60, 30, 90, 0.1));
 $table-row-border: #3c1e5a1a;
+$modal-border-color: #e4e4ee;
+$cancel-button: #ebe8ef;
+$done-button: #391e5a;
 $my-Font: sans-serif;
 $my-Size: 14px;
 $my-Style: normal;
@@ -15,11 +18,11 @@ $my-line-height: normal;
   padding: 0;
   box-sizing: border-box;
 }
-@mixin typography($font-weight, $par-Height) {
-  height: $par-Height;
-  color: $my-color;
+@mixin typography($font-weight, $Height, $color, $Size) {
+  height: $Height;
+  color: $color;
   font-family: $my-Font;
-  font-size: $my-Size;
+  font-size: $Size;
   font-style: $my-Style;
   font-weight: $font-weight;
   line-height: $my-line-height;

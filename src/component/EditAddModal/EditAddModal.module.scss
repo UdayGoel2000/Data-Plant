@@ -1,0 +1,107 @@
+@import "../../index.scss";
+
+.mainDiv {
+  @include typography(600, 6vh, $my-color, 16px);
+  position: absolute;
+  top: 20vh;
+  left: 70vw;
+  width: 22vw;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid $modal-border-color;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 2vh 1vw;
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5vh 0;
+    label {
+      @include typography(400, 100%, #000000, $my-Size);
+      width: 40%;
+    }
+    input {
+      @include typography(400, 5vh, $my-color, $my-Size);
+      border-radius: 4px;
+      width: 55%;
+      border: 1px solid var(--Blue10, rgba(60, 30, 90, 0.1));
+      background: #fff;
+      cursor: pointer;
+      &:focus {
+        outline: 1px solid $brand-primary;
+      }
+    }
+    select {
+      width: 55%;
+      @include typography(400, 5vh, $my-color, $my-Size);
+      border: 1px solid var(--Blue10, rgba(60, 30, 90, 0.1));
+      cursor: pointer;
+      &:focus {
+        outline: 1px solid $brand-primary;
+      }
+    }
+    .weeklyRepeat {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      @include typography(600, 5vh, $my-color, $my-Size);
+      width: 55.5%;
+      label {
+        @include typography(400, 100%, #000000, $my-Size);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 4vh;
+        height: 70%;
+        border: 1px solid $my-color;
+        border-radius: 50%;
+        cursor: pointer;
+        // height: 100%;
+      }
+      input {
+        display: none;
+        &:checked + label {
+          background-color: $brand-primary;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  .heading {
+    margin-top: 0;
+    margin-bottom: 3vh;
+  }
+  .Description {
+    height: 10vh;
+    textarea {
+      height: 100%;
+      width: 55%;
+      border: 1px solid var(--Blue10, rgba(60, 30, 90, 0.1));
+      cursor: pointer;
+      &:focus {
+        outline: 1px solid $brand-primary;
+      }
+    }
+  }
+
+  .ButtonDiv {
+    justify-content: flex-end;
+    gap: 1vw;
+    :nth-child(1) {
+      background-color: $cancel-button;
+      color: $my-color;
+    }
+    :nth-child(2) {
+      background-color: $done-button;
+      color: #ffffff;
+    }
+    button {
+      width: 5.8vw;
+      height: 5.2vh;
+      padding: 1vh 1.5vw;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  }
+}

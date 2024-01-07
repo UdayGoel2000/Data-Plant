@@ -2,31 +2,31 @@
   "DataArray": [
     {
       "Id": "Data1",
-      "Title": "Sample Title",
+      "Title": "Sample Title1",
       "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae tincidunt est, dictum convallis purus. Fusce eu est a lacus luctus sodales id vitae diam. Ut interdum tristique ....",
       "Subject": "Sample subject",
-      "Schedule": "Daily at 10:00AM"
+      "Schedule": "Weekly on Monday Wednesday Friday at 10:00AM"
     },
     {
       "Id": "Data2",
-      "Title": "Sample Title",
+      "Title": "Sample Title2",
       "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae tincidunt est, dictum convallis purus. Fusce eu est a lacus luctus sodales id vitae diam. Ut interdum tristique ....",
       "Subject": "Sample subject",
-      "Schedule": "Daily at 10:00AM"
+      "Schedule": "Daily at 10:00PM"
     },
     {
       "Id": "Data3",
-      "Title": "Sample Title",
+      "Title": "Sample Title3",
       "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae tincidunt est, dictum convallis purus. Fusce eu est a lacus luctus sodales id vitae diam. Ut interdum tristique ....",
       "Subject": "Sample subject",
-      "Schedule": "Daily at 10:00AM"
+      "Schedule": "Monthly on Last Friday at 05:00PM"
     },
     {
       "Id": "Data4",
-      "Title": "Sample Title",
+      "Title": "Sample Title4",
       "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae tincidunt est, dictum convallis purus. Fusce eu est a lacus luctus sodales id vitae diam. Ut interdum tristique ....",
       "Subject": "Sample subject",
-      "Schedule": "Daily at 10:00AM"
+      "Schedule": "Monthly on First Monday at 10:00AM"
     }
   ]
 }

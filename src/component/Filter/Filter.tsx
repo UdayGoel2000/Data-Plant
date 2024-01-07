@@ -21,7 +21,10 @@ const Filter = () => {
           <Search />
         </span>
       </div>
-      <div className={styles.AddButton}>
+      <div
+        className={styles.AddButton}
+        onClick={() => handleState({ modalType: "Add" })}
+      >
         <AddIcon />
         <p>Add</p>
       </div>
