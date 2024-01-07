@@ -9,7 +9,7 @@
       background: $table-header-background;
 
       .tableHeaders {
-        @include typography(600, 5vh);
+        @include typography(600, 5vh, $my-color, $my-Size);
         th {
           text-align: left;
           padding: 1.5vh 1.5vw;
@@ -32,10 +32,13 @@
       }
     }
     .tableRows {
-      @include typography(400, 6vh);
+      @include typography(400, 6vh, $my-color, $my-Size);
       border: 1px solid $table-row-border;
       td {
         padding: 1.5vh 1.5vw;
+      }
+      .buttonDiv * {
+        cursor: pointer;
       }
       .deleteIcon {
         margin-left: 2vw;

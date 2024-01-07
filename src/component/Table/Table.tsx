@@ -3,9 +3,19 @@ import styles from "./Table.module.scss";
 import { useMyContext } from "../../context/DataProvider";
 import { ReactComponent as Edit } from "../../assets/Edit.svg";
 import { ReactComponent as Delete } from "../../assets/Delete.svg";
+import { ModalType } from "../../utils/Types";
 
 const Table = () => {
-  const { state } = useMyContext();
+  const { state, handleState } = useMyContext();
+  const HandleClick = (ID: string, ButtonType: ModalType) => {
+    ButtonType === "Edit"
+      ? handleState({
+          isModalOpen: true,
+          clickedDataId: ID,
+          modalType: ButtonType,
+        })
+      : handleState({ clickedDataId: ID, modalType: ButtonType });
+  };
   return (
     <div className={styles.mainDiv}>
       <table>
@@ -25,13 +35,13 @@ const Table = () => {
               <td>{ele.Description}</td>
               <td>{ele.Subject}</td>
               <td>{ele.Schedule}</td>
-              <td>
-                <span onClick={() => console.log(ele.Id)}>
+              <td className={styles.buttonDiv}>
+                <span onClick={() => HandleClick(ele.Id, "Edit")}>
                   <Edit />
                 </span>
                 <span
                   className={styles.deleteIcon}
-                  onClick={() => console.log(ele.Id)}
+                  onClick={() => HandleClick(ele.Id, "Delete")}
                 >
                   <Delete />
                 </span>
