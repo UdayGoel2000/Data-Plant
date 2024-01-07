@@ -22,6 +22,7 @@ export type ModalType = "Edit" | "Add" | "Delete" | "None";
 export type MyState = {
   seacrhText: string;
   mainData: TableDataType[];
+  apiData: TableDataType[];
   isModalOpen: boolean;
   modalType: ModalType;
   clickedDataId: string;
